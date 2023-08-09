@@ -33,8 +33,6 @@
         (mousedown)="isPanning = true"
       />
 
-      <ng-content></ng-content>
-
       <svg:g class="clusters">
         <svg:g
           #clusterElement
@@ -128,6 +126,8 @@
           />
         </svg:g>
       </svg:g>
+
+      <ng-content></ng-content>
     </svg:g>
 
     <svg:clipPath [attr.id]="minimapClipPathId">
